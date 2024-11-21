@@ -17,7 +17,7 @@ const Result = () => {
 
   return (
     <div>
-      <div className="overflow-x-auto m-5 mb-10">
+      <div className="overflow-x-auto m-5 mb-10 text-center">
         <table className="table max-w-lg mx-auto border-2 border-black print:max-w-xl print:mt-10">
           <thead className="bg-slate-50">
             <tr className="border-b-2 border-black">
@@ -83,6 +83,12 @@ const Result = () => {
             )}
           </tbody>
         </table>
+        <button
+          className="btn btn-active btn-primary m-5 mb-10 print:hidden"
+          onClick={() => window.print()}
+        >
+          Print
+        </button>
       </div>
     </div>
   );
