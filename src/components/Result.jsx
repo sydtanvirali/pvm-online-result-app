@@ -17,21 +17,25 @@ const Result = () => {
 
   return (
     <div>
-      <div className="overflow-x-auto mx-5 my-10">
-        <table className="table w-fit mx-auto border-2 border-black">
+      <div className="overflow-x-auto m-5 mb-10">
+        <table className="table max-w-lg mx-auto border-2 border-black print:max-w-xl print:mt-10">
           <thead className="bg-slate-50">
             <tr className="border-b-2 border-black">
               <th colSpan={2}>
-                <div className="flex flex-col md:flex-row items-center md:gap-4">
-                  <img src={Logo} className="w-16 md:w-24" alt="logo" />
+                <div className="flex flex-row gap-2 md:flex-row items-center md:gap-4 print:gap-4">
+                  <img
+                    src={Logo}
+                    className="w-14 md:w-24 print:w-24"
+                    alt="logo"
+                  />
                   <div>
-                    <h1 className="text-lg md:text-xl text-black">
+                    <h1 className="text-sm min-[400px]:text-lg md:text-xl text-black print:text-2xl">
                       Pratap Vidya Mandir High School
                     </h1>
                     <h1>Tal. Chopda, Dist. Jalgaon (425107)</h1>
                   </div>
                 </div>
-                <div className="flex flex-col gap-2 mt-2 md:mt-0">
+                <div className="flex flex-col gap-2 mt-2 md:mt-0 md:text-sm print:text-sm">
                   <div className="flex justify-between text-black">
                     <div className="flex gap-2">
                       <h1>Name:</h1>

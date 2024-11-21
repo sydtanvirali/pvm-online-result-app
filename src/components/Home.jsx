@@ -67,7 +67,7 @@ const Home = () => {
         <div className="mb-5">
           <label
             htmlFor="regNo"
-            className="block mb-2 text-sm font-medium text-gray-900"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Registration No.
           </label>
@@ -83,7 +83,7 @@ const Home = () => {
         <div className="mb-10">
           <label
             htmlFor="standard"
-            className="block mb-2 text-sm font-medium text-gray-900"
+            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
             Class/Standard
           </label>
