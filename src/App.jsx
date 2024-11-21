@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Result from "./components/Result";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster, toast } from "sonner";
 import { ResultProvider } from "./context/ResultContext";
 
@@ -14,12 +14,12 @@ const App = () => {
       <Toaster position="top-right" theme="system" richColors={true} />
       <Navbar />
       <ResultProvider>
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/result" element={<Result />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </ResultProvider>
       <Footer />
     </>

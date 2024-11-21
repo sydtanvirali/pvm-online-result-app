@@ -84,7 +84,7 @@ const Result = () => {
           </tbody>
         </table>
         <button
-          className="btn btn-active btn-primary m-5 mb-10 print:hidden"
+          className="btn btn-neutral m-5 mb-10 print:hidden"
           onClick={() => window.print()}
         >
           Print

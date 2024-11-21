@@ -5,7 +5,7 @@
 @layer utilities {
   @media print {
     @page {
-      size: A4;
+      size: 210mm 297mm; /* Explicit ISO A4 size */
     }
   }
 }
